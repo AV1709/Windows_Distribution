@@ -2,7 +2,7 @@
 
 Um die Anwendung zur Erstellung einer standardisierten Muskoskelettalen Befunderhebung erstmals nutzen zu können, müssen Sie einige Schritte zur Installation durchführen.
 
-Falls Sie einen Mac (Apple-Rechner)Windows-Rechner nutzen, dann folgen Sie den Schritten unter [#Link](https://github.com/AV1709/Mac_Distribution).
+Falls Sie einen Mac (Apple-Rechner)Windows-Rechner nutzen, dann folgen Sie den Schritten [hier](https://github.com/AV1709/Mac_Distribution).
 
 Falls Sie einen Windows-Rechner nutzen, dann folgen Sie den folgenden Schritten: Sollten Sie das Programm schon komplett installiert haben, springen sie zu Schritt 3 zum Starten der Webapp.
 
