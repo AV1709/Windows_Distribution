@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Briefcase-Version: 0.3.23
+Name: mehrstufendiagnostik
+Formal-Name: Muskoskelettale Befunderhebung
+App-ID: toplevel.domain.mehrstufendiagnostik
+Version: 0.0.1
+Home-page: https://domain.toplevel/mehrstufendiagnostik
+Download-URL: https://domain.toplevel/mehrstufendiagnostik
+Author: Anton Veith
+Author-email: veith@th-brandenburg.de
+Summary: Webbasierte Anwendungen zur Erstellung einer standardisierten Muskuloskelettalen Befunderhebung mit hinterlegten Messinstrumenten des Outcomes

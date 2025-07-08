@@ -1,0 +1,942 @@
+Date/Time:       2025-07-06 18:24:25 
+Command line:    D:\Wichtiges\Studium\Bachelorarbeit\Flask\test_webapp\beeware-venv\Scripts\briefcase package -u
+
+OS Release:      Windows 11
+OS Version:      10.0.26100
+Architecture:    AMD64
+Platform:        Windows-11-10.0.26100-SP0
+
+Python exe:      D:\Wichtiges\Studium\Bachelorarbeit\Flask\test_webapp\beeware-venv\Scripts\python.exe
+Python version:  3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]
+Virtual env:     True
+Conda env:       False
+
+Briefcase:       0.3.23
+Target platform: windows
+Target format:   app
+
+Environment Variables:
+	3DVPATH=C:\AMD\Chipset_Software\Binaries\3D_V-Cache_Performance_Optimizer_Driver\
+	ALLUSERSPROFILE=C:\ProgramData
+	AMDRMSDKPATH=C:\Program Files\AMD\RyzenMasterSDK\
+	APPDATA=C:\Users\tonni\AppData\Roaming
+	CHOCOLATEYINSTALL=C:\ProgramData\chocolatey
+	CHOCOLATEYLASTPATHUPDATE=133867799742933118
+	COMMONPROGRAMFILES=C:\Program Files\Common Files
+	COMMONPROGRAMFILES(X86)=C:\Program Files (x86)\Common Files
+	COMMONPROGRAMW6432=C:\Program Files\Common Files
+	COMPUTERNAME=BROBELIX
+	COMSPEC=C:\WINDOWS\system32\cmd.exe
+	DRIVERDATA=C:\Windows\System32\Drivers\DriverData
+	EFC_27248_1592913036=1
+	EFC_27248_2283032206=0
+	FPS_BROWSER_APP_PROFILE_STRING=Internet Explorer
+	FPS_BROWSER_USER_PROFILE_STRING=Default
+	HOMEDRIVE=C:
+	HOMEPATH=\Users\tonni
+	LOCALAPPDATA=C:\Users\tonni\AppData\Local
+	LOGONSERVER=\\BROBELIX
+	NUMBER_OF_PROCESSORS=16
+	ONEDRIVE=C:\Users\tonni\OneDrive
+	ONEDRIVECONSUMER=C:\Users\tonni\OneDrive
+	OS=Windows_NT
+	PATH=D:\Wichtiges\Studium\Bachelorarbeit\Flask\test_webapp\beeware-venv\Scripts;C:\Python313\Scripts\;C:\Python313\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Users\tonni\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\JetBrains\PyCharm Community Edition 2024.3.4\bin;;C:\Users\tonni\AppData\Roaming\npm;C:\Users\tonni\AppData\Local\Programs\Microsoft VS Code\bin
+	PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW
+	PROCESSOR_ARCHITECTURE=AMD64
+	PROCESSOR_IDENTIFIER=AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD
+	PROCESSOR_LEVEL=25
+	PROCESSOR_REVISION=6102
+	PROGRAMDATA=C:\ProgramData
+	PROGRAMFILES=C:\Program Files
+	PROGRAMFILES(X86)=C:\Program Files (x86)
+	PROGRAMW6432=C:\Program Files
+	PROMPT=(beeware-venv) $P$G
+	PSMODULEPATH=C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+	PUBLIC=C:\Users\Public
+	PYCHARM COMMUNITY EDITION=C:\Program Files\JetBrains\PyCharm Community Edition 2024.3.4\bin;
+	SESSIONNAME=Console
+	SYSTEMDRIVE=C:
+	SYSTEMROOT=C:\WINDOWS
+	TEMP=C:\Users\tonni\AppData\Local\Temp
+	TMP=C:\Users\tonni\AppData\Local\Temp
+	USERDOMAIN=BROBELIX
+	USERDOMAIN_ROAMINGPROFILE=BROBELIX
+	USERNAME=tonni
+	USERPROFILE=C:\Users\tonni
+	VBOX_MSI_INSTALL_PATH=C:\Program Files\Oracle\VirtualBox\
+	VIRTUAL_ENV=D:\Wichtiges\Studium\Bachelorarbeit\Flask\test_webapp\beeware-venv
+	VIRTUAL_ENV_PROMPT=beeware-venv
+	WINDIR=C:\WINDOWS
+	_OLD_VIRTUAL_PATH=C:\Python313\Scripts\;C:\Python313\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Users\tonni\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\JetBrains\PyCharm Community Edition 2024.3.4\bin;;C:\Users\tonni\AppData\Roaming\npm;C:\Users\tonni\AppData\Local\Programs\Microsoft VS Code\bin
+	_OLD_VIRTUAL_PROMPT=$P$G
+
+pyproject.toml:
+# This project was generated with 0.3.23 using template: https://github.com/beeware/briefcase-template @ v0.3.23
+[tool.briefcase]
+project_name = "Muskoskelettale Befunderhebung"
+bundle = "toplevel.domain"
+version = "0.0.1"
+url = "https://domain.toplevel/mehrstufendiagnostik"
+license.file = "LICENSE"
+author = "Anton Veith"
+author_email = "veith@th-brandenburg.de"
+
+[tool.briefcase.app.mehrstufendiagnostik]
+formal_name = "Muskoskelettale_Befunderhebung"
+description = "Webbasierte Anwendungen zur Erstellung einer standardisierten Muskuloskelettalen Befunderhebung mit hinterlegten Messinstrumenten des Outcomes"
+long_description = """Fuer unauffaellige Befunde werden Standardtexte
+hinterlegt, fuer Auffaelligkeiten und pathologische Befunde wird die
+Moeglichkeit einer Freitexteingabe ueber Spracherkennung angeboten.
+"""
+
+icon = "mehrstufendiagnostik/resources/mehrstufendiagnostik"
+installer_icon = "mehrstufendiagnostik/resources/mehrstufendiagnostik"
+
+sources = [
+    "mehrstufendiagnostik",
+]
+
+requires = [
+    "audioop-lts==0.2.1",
+    "blinker==1.9.0",
+    "bottle==0.13.4",
+    "cffi==1.17.1",
+    "click==8.1.8",
+    "clr_loader==0.2.7.post0",
+    "colorama==0.4.6",
+    "Flask==3.1.0",
+    "itsdangerous==2.2.0",
+    "Jinja2==3.1.6",
+    "MarkupSafe==3.0.2",
+    "proxy_tools==0.1.0",
+    "PyAudio==0.2.14",
+    "pycparser==2.22",
+    "pythonnet==3.0.5",
+    "pywebview==5.4",
+    "SpeechRecognition==3.14.3",
+    "standard-aifc==3.13.0",
+    "standard-chunk==3.13.0",
+    "typing_extensions==4.14.0",
+    "waitress==3.0.2",
+    "Werkzeug==3.1.3"
+]
+
+[tool.briefcase.app.mehrstufendiagnostik.macOS]
+universal_build = true
+requires = [
+    "audioop-lts==0.2.1",
+    "blinker==1.9.0",
+    "bottle==0.13.4",
+    "cffi==1.17.1",
+    "click==8.1.8",
+    "clr_loader==0.2.7.post0",
+    "colorama==0.4.6",
+    "Flask==3.1.0",
+    "itsdangerous==2.2.0",
+    "Jinja2==3.1.6",
+    "MarkupSafe==3.0.2",
+    "proxy_tools==0.1.0",
+    "PyAudio==0.2.14",
+    "pycparser==2.22",
+    "pythonnet==3.0.5",
+    "pywebview==5.4",
+    "SpeechRecognition==3.14.3",
+    "standard-aifc==3.13.0",
+    "standard-chunk==3.13.0",
+    "typing_extensions==4.14.0",
+    "waitress==3.0.2",
+    "Werkzeug==3.1.3"
+]
+
+[tool.briefcase.app.mehrstufendiagnostik.linux]
+requires = [
+    "audioop-lts==0.2.1",
+    "blinker==1.9.0",
+    "bottle==0.13.4",
+    "cffi==1.17.1",
+    "click==8.1.8",
+    "clr_loader==0.2.7.post0",
+    "colorama==0.4.6",
+    "Flask==3.1.0",
+    "itsdangerous==2.2.0",
+    "Jinja2==3.1.6",
+    "MarkupSafe==3.0.2",
+    "proxy_tools==0.1.0",
+    "PyAudio==0.2.14",
+    "pycparser==2.22",
+    "pythonnet==3.0.5",
+    "pywebview==5.4",
+    "SpeechRecognition==3.14.3",
+    "standard-aifc==3.13.0",
+    "standard-chunk==3.13.0",
+    "typing_extensions==4.14.0",
+    "waitress==3.0.2",
+    "Werkzeug==3.1.3"
+]
+
+[tool.briefcase.app.mehrstufendiagnostik.linux.system.debian]
+system_requires = [
+    # Add any system packages needed at build the app here
+]
+
+system_runtime_requires = [
+    # Add any system packages needed at runtime here
+]
+
+[tool.briefcase.app.mehrstufendiagnostik.linux.system.rhel]
+system_requires = [
+    # Add any system packages needed at build the app here
+]
+
+system_runtime_requires = [
+    # Add any system packages needed at runtime here
+]
+
+[tool.briefcase.app.mehrstufendiagnostik.linux.system.suse]
+system_requires = [
+    # Add any system packages needed at build the app here
+]
+
+system_runtime_requires = [
+    # Add any system packages needed at runtime here
+]
+
+[tool.briefcase.app.mehrstufendiagnostik.linux.system.arch]
+system_requires = [
+    # Add any system packages needed at build the app here
+]
+
+system_runtime_requires = [
+    # Add any system packages needed at runtime here
+]
+
+[tool.briefcase.app.mehrstufendiagnostik.linux.flatpak]
+flatpak_runtime = "org.freedesktop.Platform"
+flatpak_runtime_version = "24.08"
+flatpak_sdk = "org.freedesktop.Sdk"
+
+[tool.briefcase.app.mehrstufendiagnostik.windows]
+requires = [
+    "audioop-lts==0.2.1",
+    "blinker==1.9.0",
+    "bottle==0.13.4",
+    "cffi==1.17.1",
+    "click==8.1.8",
+    "clr_loader==0.2.7.post0",
+    "colorama==0.4.6",
+    "Flask==3.1.0",
+    "itsdangerous==2.2.0",
+    "Jinja2==3.1.6",
+    "MarkupSafe==3.0.2",
+    "proxy_tools==0.1.0",
+    "PyAudio==0.2.14",
+    "pycparser==2.22",
+    "pythonnet==3.0.5",
+    "pywebview==5.4",
+    "SpeechRecognition==3.14.3",
+    "standard-aifc==3.13.0",
+    "standard-chunk==3.13.0",
+    "typing_extensions==4.14.0",
+    "waitress==3.0.2",
+    "Werkzeug==3.1.3"
+]
+
+# Mobile deployments
+[tool.briefcase.app.mehrstufendiagnostik.iOS]
+requires = [
+    "audioop-lts==0.2.1",
+    "blinker==1.9.0",
+    "bottle==0.13.4",
+    "cffi==1.17.1",
+    "click==8.1.8",
+    "clr_loader==0.2.7.post0",
+    "colorama==0.4.6",
+    "Flask==3.1.0",
+    "itsdangerous==2.2.0",
+    "Jinja2==3.1.6",
+    "MarkupSafe==3.0.2",
+    "proxy_tools==0.1.0",
+    "PyAudio==0.2.14",
+    "pycparser==2.22",
+    "pythonnet==3.0.5",
+    "pywebview==5.4",
+    "SpeechRecognition==3.14.3",
+    "standard-aifc==3.13.0",
+    "standard-chunk==3.13.0",
+    "typing_extensions==4.14.0",
+    "waitress==3.0.2",
+    "Werkzeug==3.1.3"
+]
+
+[tool.briefcase.app.mehrstufendiagnostik.android]
+requires = [
+    "audioop-lts==0.2.1",
+    "blinker==1.9.0",
+    "bottle==0.13.4",
+    "cffi==1.17.1",
+    "click==8.1.8",
+    "clr_loader==0.2.7.post0",
+    "colorama==0.4.6",
+    "Flask==3.1.0",
+    "itsdangerous==2.2.0",
+    "Jinja2==3.1.6",
+    "MarkupSafe==3.0.2",
+    "proxy_tools==0.1.0",
+    "PyAudio==0.2.14",
+    "pycparser==2.22",
+    "pythonnet==3.0.5",
+    "pywebview==5.4",
+    "SpeechRecognition==3.14.3",
+    "standard-aifc==3.13.0",
+    "standard-chunk==3.13.0",
+    "typing_extensions==4.14.0",
+    "waitress==3.0.2",
+    "Werkzeug==3.1.3"
+]
+
+# Web deployments
+[tool.briefcase.app.mehrstufendiagnostik.web]
+requires = [
+    "audioop-lts==0.2.1",
+    "blinker==1.9.0",
+    "bottle==0.13.4",
+    "cffi==1.17.1",
+    "click==8.1.8",
+    "clr_loader==0.2.7.post0",
+    "colorama==0.4.6",
+    "Flask==3.1.0",
+    "itsdangerous==2.2.0",
+    "Jinja2==3.1.6",
+    "MarkupSafe==3.0.2",
+    "proxy_tools==0.1.0",
+    "PyAudio==0.2.14",
+    "pycparser==2.22",
+    "pythonnet==3.0.5",
+    "pywebview==5.4",
+    "SpeechRecognition==3.14.3",
+    "standard-aifc==3.13.0",
+    "standard-chunk==3.13.0",
+    "typing_extensions==4.14.0",
+    "waitress==3.0.2",
+    "Werkzeug==3.1.3"
+]
+
+use_full_install_path = false
+
+Briefcase Log:
+[18:24:19] Using WiX at C:\Users\tonni\AppData\Local\BeeWare\briefcase\Cache\tools\wix                                                                                    wix.py:113
+                                                                                                                                                                        update.py:56
+           [mehrstufendiagnostik] Updating application code...                                                                                                          update.py:56
+           Installing mehrstufendiagnostik... started                                                                                                                  create.py:735
+[18:24:20] Installing mehrstufendiagnostik... done                                                                                                                     create.py:735
+                                                                                                                                                                        update.py:60
+           [mehrstufendiagnostik] Updating requirements...                                                                                                              update.py:60
+           Installing app requirements... started                                                                                                                      create.py:656
+                                                                                                                                                                   subprocess.py:838
+           >>> Running Command:                                                                                                                                    subprocess.py:838
+           >>>     'D:\Wichtiges\Studium\Bachelorarbeit\Flask\test_webapp\beeware-venv\Scripts\python.exe' -u -X utf8 -m pip install --disable-pip-version-check   subprocess.py:838
+           --upgrade --no-user '--target=D:\Wichtiges\Studium\Bachelorarbeit\Flask\test_webapp\build\mehrstufendiagnostik\windows\app\src\app_packages'                             
+           audioop-lts==0.2.1 blinker==1.9.0 bottle==0.13.4 cffi==1.17.1 click==8.1.8 clr_loader==0.2.7.post0 colorama==0.4.6 Flask==3.1.0 itsdangerous==2.2.0                      
+           Jinja2==3.1.6 MarkupSafe==3.0.2 proxy_tools==0.1.0 PyAudio==0.2.14 pycparser==2.22 pythonnet==3.0.5 pywebview==5.4 SpeechRecognition==3.14.3                             
+           standard-aifc==3.13.0 standard-chunk==3.13.0 typing_extensions==4.14.0 waitress==3.0.2 Werkzeug==3.1.3 audioop-lts==0.2.1 blinker==1.9.0 bottle==0.13.4                  
+           cffi==1.17.1 click==8.1.8 clr_loader==0.2.7.post0 colorama==0.4.6 Flask==3.1.0 itsdangerous==2.2.0 Jinja2==3.1.6 MarkupSafe==3.0.2 proxy_tools==0.1.0                    
+           PyAudio==0.2.14 pycparser==2.22 pythonnet==3.0.5 pywebview==5.4 SpeechRecognition==3.14.3 standard-aifc==3.13.0 standard-chunk==3.13.0                                   
+           typing_extensions==4.14.0 waitress==3.0.2 Werkzeug==3.1.3                                                                                                                
+           >>> Working Directory:                                                                                                                                  subprocess.py:838
+           >>>     D:\Wichtiges\Studium\Bachelorarbeit\Flask\test_webapp                                                                                           subprocess.py:838
+[18:24:21] Collecting audioop-lts==0.2.1                                                                                                                           subprocess.py:195
+             Using cached audioop_lts-0.2.1-cp313-abi3-win_amd64.whl.metadata (1.7 kB)                                                                             subprocess.py:195
+           Collecting blinker==1.9.0                                                                                                                               subprocess.py:195
+             Using cached blinker-1.9.0-py3-none-any.whl.metadata (1.6 kB)                                                                                         subprocess.py:195
+           Collecting bottle==0.13.4                                                                                                                               subprocess.py:195
+             Using cached bottle-0.13.4-py2.py3-none-any.whl.metadata (1.6 kB)                                                                                     subprocess.py:195
+           Collecting cffi==1.17.1                                                                                                                                 subprocess.py:195
+             Using cached cffi-1.17.1-cp313-cp313-win_amd64.whl.metadata (1.6 kB)                                                                                  subprocess.py:195
+           Collecting click==8.1.8                                                                                                                                 subprocess.py:195
+             Using cached click-8.1.8-py3-none-any.whl.metadata (2.3 kB)                                                                                           subprocess.py:195
+           Collecting clr_loader==0.2.7.post0                                                                                                                      subprocess.py:195
+             Using cached clr_loader-0.2.7.post0-py3-none-any.whl.metadata (1.5 kB)                                                                                subprocess.py:195
+           Collecting colorama==0.4.6                                                                                                                              subprocess.py:195
+             Using cached colorama-0.4.6-py2.py3-none-any.whl.metadata (17 kB)                                                                                     subprocess.py:195
+           Collecting Flask==3.1.0                                                                                                                                 subprocess.py:195
+             Using cached flask-3.1.0-py3-none-any.whl.metadata (2.7 kB)                                                                                           subprocess.py:195
+           Collecting itsdangerous==2.2.0                                                                                                                          subprocess.py:195
+             Using cached itsdangerous-2.2.0-py3-none-any.whl.metadata (1.9 kB)                                                                                    subprocess.py:195
+           Collecting Jinja2==3.1.6                                                                                                                                subprocess.py:195
+             Using cached jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)                                                                                          subprocess.py:195
+           Collecting MarkupSafe==3.0.2                                                                                                                            subprocess.py:195
+             Using cached MarkupSafe-3.0.2-cp313-cp313-win_amd64.whl.metadata (4.1 kB)                                                                             subprocess.py:195
+           Collecting proxy_tools==0.1.0                                                                                                                           subprocess.py:195
+             Using cached proxy_tools-0.1.0-py3-none-any.whl                                                                                                       subprocess.py:195
+           Collecting PyAudio==0.2.14                                                                                                                              subprocess.py:195
+             Using cached PyAudio-0.2.14-cp313-cp313-win_amd64.whl.metadata (2.7 kB)                                                                               subprocess.py:195
+           Collecting pycparser==2.22                                                                                                                              subprocess.py:195
+             Using cached pycparser-2.22-py3-none-any.whl.metadata (943 bytes)                                                                                     subprocess.py:195
+           Collecting pythonnet==3.0.5                                                                                                                             subprocess.py:195
+             Using cached pythonnet-3.0.5-py3-none-any.whl.metadata (6.6 kB)                                                                                       subprocess.py:195
+           Collecting pywebview==5.4                                                                                                                               subprocess.py:195
+             Using cached pywebview-5.4-py3-none-any.whl.metadata (4.5 kB)                                                                                         subprocess.py:195
+           Collecting SpeechRecognition==3.14.3                                                                                                                    subprocess.py:195
+             Using cached speechrecognition-3.14.3-py3-none-any.whl.metadata (30 kB)                                                                               subprocess.py:195
+           Collecting standard-aifc==3.13.0                                                                                                                        subprocess.py:195
+             Using cached standard_aifc-3.13.0-py3-none-any.whl.metadata (969 bytes)                                                                               subprocess.py:195
+           Collecting standard-chunk==3.13.0                                                                                                                       subprocess.py:195
+             Using cached standard_chunk-3.13.0-py3-none-any.whl.metadata (860 bytes)                                                                              subprocess.py:195
+           Collecting typing_extensions==4.14.0                                                                                                                    subprocess.py:195
+             Using cached typing_extensions-4.14.0-py3-none-any.whl.metadata (3.0 kB)                                                                              subprocess.py:195
+           Collecting waitress==3.0.2                                                                                                                              subprocess.py:195
+             Using cached waitress-3.0.2-py3-none-any.whl.metadata (5.8 kB)                                                                                        subprocess.py:195
+           Collecting Werkzeug==3.1.3                                                                                                                              subprocess.py:195
+             Using cached werkzeug-3.1.3-py3-none-any.whl.metadata (3.7 kB)                                                                                        subprocess.py:195
+[18:24:22] Using cached audioop_lts-0.2.1-cp313-abi3-win_amd64.whl (30 kB)                                                                                         subprocess.py:195
+           Using cached blinker-1.9.0-py3-none-any.whl (8.5 kB)                                                                                                    subprocess.py:195
+           Using cached bottle-0.13.4-py2.py3-none-any.whl (103 kB)                                                                                                subprocess.py:195
+           Using cached cffi-1.17.1-cp313-cp313-win_amd64.whl (182 kB)                                                                                             subprocess.py:195
+           Using cached click-8.1.8-py3-none-any.whl (98 kB)                                                                                                       subprocess.py:195
+           Using cached clr_loader-0.2.7.post0-py3-none-any.whl (50 kB)                                                                                            subprocess.py:195
+           Using cached colorama-0.4.6-py2.py3-none-any.whl (25 kB)                                                                                                subprocess.py:195
+           Using cached flask-3.1.0-py3-none-any.whl (102 kB)                                                                                                      subprocess.py:195
+           Using cached itsdangerous-2.2.0-py3-none-any.whl (16 kB)                                                                                                subprocess.py:195
+           Using cached jinja2-3.1.6-py3-none-any.whl (134 kB)                                                                                                     subprocess.py:195
+           Using cached MarkupSafe-3.0.2-cp313-cp313-win_amd64.whl (15 kB)                                                                                         subprocess.py:195
+           Using cached PyAudio-0.2.14-cp313-cp313-win_amd64.whl (173 kB)                                                                                          subprocess.py:195
+           Using cached pycparser-2.22-py3-none-any.whl (117 kB)                                                                                                   subprocess.py:195
+           Using cached pythonnet-3.0.5-py3-none-any.whl (297 kB)                                                                                                  subprocess.py:195
+           Using cached pywebview-5.4-py3-none-any.whl (475 kB)                                                                                                    subprocess.py:195
+           Using cached speechrecognition-3.14.3-py3-none-any.whl (32.9 MB)                                                                                        subprocess.py:195
+           Using cached standard_aifc-3.13.0-py3-none-any.whl (10 kB)                                                                                              subprocess.py:195
+           Using cached standard_chunk-3.13.0-py3-none-any.whl (4.9 kB)                                                                                            subprocess.py:195
+           Using cached typing_extensions-4.14.0-py3-none-any.whl (43 kB)                                                                                          subprocess.py:195
+           Using cached waitress-3.0.2-py3-none-any.whl (56 kB)                                                                                                    subprocess.py:195
+           Using cached werkzeug-3.1.3-py3-none-any.whl (224 kB)                                                                                                   subprocess.py:195
+           Installing collected packages: standard-chunk, PyAudio, proxy_tools, bottle, waitress, typing_extensions, pycparser, MarkupSafe, itsdangerous,          subprocess.py:195
+           colorama, blinker, audioop-lts, Werkzeug, standard-aifc, Jinja2, click, cffi, SpeechRecognition, Flask, clr_loader, pythonnet, pywebview                                 
+[18:24:24]                                                                                                                                                         subprocess.py:195
+           Successfully installed Flask-3.1.0 Jinja2-3.1.6 MarkupSafe-3.0.2 PyAudio-0.2.14 SpeechRecognition-3.14.3 Werkzeug-3.1.3 audioop-lts-0.2.1 blinker-1.9.0 subprocess.py:195
+           bottle-0.13.4 cffi-1.17.1 click-8.1.8 clr_loader-0.2.7.post0 colorama-0.4.6 itsdangerous-2.2.0 proxy_tools-0.1.0 pycparser-2.22 pythonnet-3.0.5                          
+           pywebview-5.4 standard-aifc-3.13.0 standard-chunk-3.13.0 typing_extensions-4.14.0 waitress-3.0.2                                                                         
+           >>> Return code: 0                                                                                                                                      subprocess.py:838
+                                                                                                                                                                   subprocess.py:838
+           Installing app requirements... done                                                                                                                         create.py:656
+                                                                                                                                                                        update.py:64
+           [mehrstufendiagnostik] Updating application resources...                                                                                                     update.py:64
+           Installing mehrstufendiagnostik/resources/mehrstufendiagnostik.ico as application icon... started                                                           create.py:816
+           Installing mehrstufendiagnostik/resources/mehrstufendiagnostik.ico as application icon... done                                                              create.py:816
+                                                                                                                                                                        update.py:68
+           [mehrstufendiagnostik] Updating application support...                                                                                                       update.py:68
+                                                                                                                                                                     __init__.py:108
+           *************************************************************************                                                                                 __init__.py:108
+           ** WARNING: Support package update may be imperfect                    **                                                                                 __init__.py:108
+           *************************************************************************                                                                                 __init__.py:108
+                                                                                                                                                                     __init__.py:108
+               Support packages in Windows apps are overlaid with app content,                                                                                       __init__.py:108
+               so it isn't possible to remove all old support files before                                                                                           __init__.py:108
+               installing new ones.                                                                                                                                  __init__.py:108
+                                                                                                                                                                     __init__.py:108
+               Briefcase will unpack the new support package without cleaning up                                                                                     __init__.py:108
+               existing support package content. This *should* work; however,                                                                                        __init__.py:108
+               ensure a reproducible release artefacts, it is advisable to                                                                                           __init__.py:108
+               perform a clean app build before release.                                                                                                             __init__.py:108
+                                                                                                                                                                     __init__.py:108
+           *************************************************************************                                                                                 __init__.py:108
+           Using support package https://www.python.org/ftp/python/3.13.3/python-3.13.3-embed-amd64.zip                                                                create.py:366
+           python-3.13.3-embed-amd64.zip already downloaded                                                                                                              file.py:208
+           Unpacking support package... started                                                                                                                        create.py:281
+[18:24:25] Unpacking support package... done                                                                                                                           create.py:281
+                                                                                                                                                                        update.py:85
+           [mehrstufendiagnostik] Removing unneeded app content...                                                                                                      update.py:85
+           Removing unneeded app bundle content... started                                                                                                             create.py:898
+           Removing src\python.exe                                                                                                                                     create.py:908
+           Removing src\pythonw.exe                                                                                                                                    create.py:908
+           Removing directory src\app_packages\__pycache__                                                                                                             create.py:905
+           Removing directory src\app_packages\aifc\__pycache__                                                                                                        create.py:905
+           Removing directory src\app_packages\audioop\__pycache__                                                                                                     create.py:905
+           Removing directory src\app_packages\bin\__pycache__                                                                                                         create.py:905
+           Removing directory src\app_packages\blinker\__pycache__                                                                                                     create.py:905
+           Removing directory src\app_packages\cffi\__pycache__                                                                                                        create.py:905
+           Removing directory src\app_packages\chunk\__pycache__                                                                                                       create.py:905
+           Removing directory src\app_packages\click\__pycache__                                                                                                       create.py:905
+           Removing directory src\app_packages\clr_loader\__pycache__                                                                                                  create.py:905
+           Removing directory src\app_packages\colorama\__pycache__                                                                                                    create.py:905
+           Removing directory src\app_packages\flask\__pycache__                                                                                                       create.py:905
+           Removing directory src\app_packages\itsdangerous\__pycache__                                                                                                create.py:905
+           Removing directory src\app_packages\jinja2\__pycache__                                                                                                      create.py:905
+           Removing directory src\app_packages\markupsafe\__pycache__                                                                                                  create.py:905
+           Removing directory src\app_packages\proxy_tools\__pycache__                                                                                                 create.py:905
+           Removing directory src\app_packages\pyaudio\__pycache__                                                                                                     create.py:905
+           Removing directory src\app_packages\pycparser\__pycache__                                                                                                   create.py:905
+           Removing directory src\app_packages\pythonnet\__pycache__                                                                                                   create.py:905
+           Removing directory src\app_packages\speech_recognition\__pycache__                                                                                          create.py:905
+           Removing directory src\app_packages\tests\__pycache__                                                                                                       create.py:905
+           Removing directory src\app_packages\waitress\__pycache__                                                                                                    create.py:905
+           Removing directory src\app_packages\webview\__pycache__                                                                                                     create.py:905
+           Removing directory src\app_packages\werkzeug\__pycache__                                                                                                    create.py:905
+           Removing directory src\app_packages\werkzeug\datastructures\__pycache__                                                                                     create.py:905
+           Removing directory src\app_packages\werkzeug\debug\__pycache__                                                                                              create.py:905
+           Removing directory src\app_packages\werkzeug\middleware\__pycache__                                                                                         create.py:905
+           Removing directory src\app_packages\werkzeug\routing\__pycache__                                                                                            create.py:905
+           Removing directory src\app_packages\werkzeug\sansio\__pycache__                                                                                             create.py:905
+           Removing directory src\app_packages\werkzeug\wrappers\__pycache__                                                                                           create.py:905
+           Removing directory src\app_packages\webview\dom\__pycache__                                                                                                 create.py:905
+           Removing directory src\app_packages\webview\platforms\__pycache__                                                                                           create.py:905
+           Removing directory src\app_packages\webview\__pyinstaller\__pycache__                                                                                       create.py:905
+           Removing directory src\app_packages\speech_recognition\recognizers\__pycache__                                                                              create.py:905
+           Removing directory src\app_packages\speech_recognition\recognizers\whisper_api\__pycache__                                                                  create.py:905
+           Removing directory src\app_packages\speech_recognition\recognizers\whisper_local\__pycache__                                                                create.py:905
+           Removing directory src\app_packages\pycparser\ply\__pycache__                                                                                               create.py:905
+           Removing directory src\app_packages\flask\json\__pycache__                                                                                                  create.py:905
+           Removing directory src\app_packages\flask\sansio\__pycache__                                                                                                create.py:905
+           Removing directory src\app_packages\colorama\tests\__pycache__                                                                                              create.py:905
+           Removing directory src\app_packages\clr_loader\ffi\__pycache__                                                                                              create.py:905
+           Removing directory src\app_packages\clr_loader\util\__pycache__                                                                                             create.py:905
+           Removing directory src\app\mehrstufendiagnostik\__pycache__                                                                                                 create.py:905
+           Removing directory src\app\mehrstufendiagnostik\flaskr\__pycache__                                                                                          create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\__pycache__                                                                         create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\aifc\__pycache__                                                                    create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\audioop\__pycache__                                                                 create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\blinker\__pycache__                                                                 create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\chunk\__pycache__                                                                   create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\click\__pycache__                                                                   create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\colorama\__pycache__                                                                create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\flask\__pycache__                                                                   create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\itsdangerous\__pycache__                                                            create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\jinja2\__pycache__                                                                  create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\markupsafe\__pycache__                                                              create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\pip\__pycache__                                                                     create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\pyaudio\__pycache__                                                                 create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\speech_recognition\__pycache__                                                      create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\tests\__pycache__                                                                   create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\werkzeug\__pycache__                                                                create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\werkzeug\datastructures\__pycache__                                                 create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\werkzeug\debug\__pycache__                                                          create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\werkzeug\middleware\__pycache__                                                     create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\werkzeug\routing\__pycache__                                                        create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\werkzeug\sansio\__pycache__                                                         create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\werkzeug\wrappers\__pycache__                                                       create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\speech_recognition\recognizers\__pycache__                                          create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\speech_recognition\recognizers\whisper_api\__pycache__                              create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\speech_recognition\recognizers\whisper_local\__pycache__                            create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\pip\_internal\__pycache__                                                           create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\pip\_vendor\__pycache__                                                             create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\pip\_vendor\cachecontrol\__pycache__                                                create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\pip\_vendor\certifi\__pycache__                                                     create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\pip\_vendor\dependency_groups\__pycache__                                           create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\pip\_vendor\distlib\__pycache__                                                     create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\pip\_vendor\distro\__pycache__                                                      create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\pip\_vendor\idna\__pycache__                                                        create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\pip\_vendor\msgpack\__pycache__                                                     create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\pip\_vendor\packaging\__pycache__                                                   create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\pip\_vendor\pkg_resources\__pycache__                                               create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\pip\_vendor\platformdirs\__pycache__                                                create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\pip\_vendor\pygments\__pycache__                                                    create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\pip\_vendor\pyproject_hooks\__pycache__                                             create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\pip\_vendor\requests\__pycache__                                                    create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\pip\_vendor\resolvelib\__pycache__                                                  create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\pip\_vendor\rich\__pycache__                                                        create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\pip\_vendor\tomli\__pycache__                                                       create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\pip\_vendor\tomli_w\__pycache__                                                     create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\pip\_vendor\truststore\__pycache__                                                  create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\pip\_vendor\urllib3\__pycache__                                                     create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\pip\_vendor\urllib3\contrib\__pycache__                                             create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\pip\_vendor\urllib3\packages\__pycache__                                            create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\pip\_vendor\urllib3\util\__pycache__                                                create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\pip\_vendor\urllib3\packages\backports\__pycache__                                  create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\pip\_vendor\urllib3\contrib\_securetransport\__pycache__                            create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\pip\_vendor\resolvelib\resolvers\__pycache__                                        create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\pip\_vendor\pyproject_hooks\_in_process\__pycache__                                 create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\pip\_vendor\pygments\filters\__pycache__                                            create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\pip\_vendor\pygments\formatters\__pycache__                                         create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\pip\_vendor\pygments\lexers\__pycache__                                             create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\pip\_vendor\pygments\styles\__pycache__                                             create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\pip\_vendor\packaging\licenses\__pycache__                                          create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\pip\_vendor\cachecontrol\caches\__pycache__                                         create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\pip\_internal\cli\__pycache__                                                       create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\pip\_internal\commands\__pycache__                                                  create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\pip\_internal\distributions\__pycache__                                             create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\pip\_internal\index\__pycache__                                                     create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\pip\_internal\locations\__pycache__                                                 create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\pip\_internal\metadata\__pycache__                                                  create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\pip\_internal\models\__pycache__                                                    create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\pip\_internal\network\__pycache__                                                   create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\pip\_internal\operations\__pycache__                                                create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\pip\_internal\req\__pycache__                                                       create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\pip\_internal\resolution\__pycache__                                                create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\pip\_internal\utils\__pycache__                                                     create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\pip\_internal\vcs\__pycache__                                                       create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\pip\_internal\resolution\legacy\__pycache__                                         create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\pip\_internal\resolution\resolvelib\__pycache__                                     create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\pip\_internal\operations\build\__pycache__                                          create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\pip\_internal\operations\install\__pycache__                                        create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\pip\_internal\metadata\importlib\__pycache__                                        create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\flask\json\__pycache__                                                              create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\flask\sansio\__pycache__                                                            create.py:905
+           Removing directory src\app\mehrstufendiagnostik\.venv\Lib\site-packages\colorama\tests\__pycache__                                                          create.py:905
+           Removing unneeded app bundle content... done                                                                                                                create.py:898
+                                                                                                                                                                        update.py:88
+           [mehrstufendiagnostik] Application updated.                                                                                                                  update.py:88
+                                                                                                                                                                   windows_sdk.py:82
+           [Windows SDK] Finding Suitable Installation...                                                                                                          windows_sdk.py:82
+           Evaluating Registry SDK version '10.0.19041.0' at C:\Program Files (x86)\Windows Kits\10                                                               windows_sdk.py:133
+                                                                                                                                                                   subprocess.py:838
+           >>> Running Command:                                                                                                                                    subprocess.py:838
+           >>>     'C:\Program Files (x86)\Windows Kits\10\bin\10.0.19041.0\x64\signtool.exe' '-?'                                                                 subprocess.py:838
+           >>> Working Directory:                                                                                                                                  subprocess.py:838
+           >>>     D:\Wichtiges\Studium\Bachelorarbeit\Flask\test_webapp                                                                                           subprocess.py:838
+           >>> Command Output:                                                                                                                                     subprocess.py:838
+           >>>     Usage: signtool <command> [options]                                                                                                             subprocess.py:838
+           >>>                                                                                                                                                     subprocess.py:838
+           >>>       Valid commands:                                                                                                                               subprocess.py:838
+           >>>         sign       --  Sign files using an embedded signature.                                                                                      subprocess.py:838
+           >>>         timestamp  --  Timestamp previously-signed files.                                                                                           subprocess.py:838
+           >>>         verify     --  Verify embedded or catalog signatures.                                                                                       subprocess.py:838
+           >>>         catdb      --  Modify a catalog database.                                                                                                   subprocess.py:838
+           >>>         remove     --  Remove embedded signature(s) or reduce the size of an                                                                        subprocess.py:838
+           >>>                        embedded signed file.                                                                                                        subprocess.py:838
+           >>>                                                                                                                                                     subprocess.py:838
+           >>>     For help on a specific command, enter "signtool <command> /?"                                                                                   subprocess.py:838
+           >>> Return code: 0                                                                                                                                      subprocess.py:838
+                                                                                                                                                                   subprocess.py:838
+           Using Windows SDK v10.0.19041.0 at C:\Program Files (x86)\Windows Kits\10                                                                              windows_sdk.py:227
+                                                                                                                                                                           app.py:55
+           [mehrstufendiagnostik] Building App...                                                                                                                          app.py:55
+           Removing any digital signatures from stub app... started                                                                                                        app.py:67
+                                                                                                                                                                   subprocess.py:838
+           >>> Running Command:                                                                                                                                    subprocess.py:838
+           >>>     'C:\Program Files (x86)\Windows Kits\10\bin\10.0.19041.0\x64\signtool.exe' remove -s 'src\Muskoskelettale_Befunderhebung.exe'                   subprocess.py:838
+           >>> Working Directory:                                                                                                                                  subprocess.py:838
+           >>>     D:\Wichtiges\Studium\Bachelorarbeit\Flask\test_webapp\build\mehrstufendiagnostik\windows\app                                                    subprocess.py:838
+           >>> Command Output:                                                                                                                                     subprocess.py:838
+           >>>                                                                                                                                                     subprocess.py:838
+           >>>     Number of errors: 1                                                                                                                             subprocess.py:838
+           >>>                                                                                                                                                     subprocess.py:838
+           >>>     SignTool Error: File not found: src\Muskoskelettale_Befunderhebung.exe                                                                          subprocess.py:838
+           >>>                                                                                                                                                     subprocess.py:838
+           >>> Return code: 1                                                                                                                                      subprocess.py:838
+                                                                                                                                                                   subprocess.py:838
+           Removing any digital signatures from stub app... errored                                                                                                        app.py:67
+                                                                                                                                                                      __main__.py:42
+           Failed to remove any existing digital signatures from the stub app.                                                                                        __main__.py:43
+                                                                                                                                                                      __main__.py:43
+           Recreating the app layout may also help resolve this issue:                                                                                                __main__.py:43
+                                                                                                                                                                      __main__.py:43
+               $ briefcase create windows app                                                                                                                         __main__.py:43
+                                                                                                                                                                      __main__.py:43
+           Saving log... started                                                                                                                                      console.py:433
+
+Main thread traceback:
+╭─────────────────────────────────────────────────────────────────────── Traceback (most recent call last) ────────────────────────────────────────────────────────────────────────╮
+│ D:\Wichtiges\Studium\Bachelorarbeit\Flask\test_webapp\beeware-venv\Lib\site-packages\briefcase\platforms\windows\app.py:71 in build_app                                          │
+│                                                                                                                                                                                  │
+│    68 │   │   │   │   "Removing any digital signatures from stub app..."                                                                                                         │
+│    69 │   │   │   ):                                                                                                                                                             │
+│    70 │   │   │   │   try:                                                                                                                                                       │
+│ ❱  71 │   │   │   │   │   self.tools.subprocess.check_output(                                                                                                                    │
+│    72 │   │   │   │   │   │   [                                                                                                                                                  │
+│    73 │   │   │   │   │   │   │   self.tools.windows_sdk.signtool_exe,                                                                                                           │
+│    74 │   │   │   │   │   │   │   "remove",                                                                                                                                      │
+│                                                                                                                                                                                  │
+│ ╭──────────────────────────────────────────────────────────────────── locals ────────────────────────────────────────────────────────────────────╮                               │
+│ │                 app = <toplevel.domain.mehrstufendiagnostik v0.0.1 AppConfig>                                                                  │                               │
+│ │              kwargs = {                                                                                                                        │                               │
+│ │                       │   'test_mode': False,                                                                                                  │                               │
+│ │                       │   'adhoc_sign': False,                                                                                                 │                               │
+│ │                       │   'identity': None,                                                                                                    │                               │
+│ │                       │   'file_digest': 'sha256',                                                                                             │                               │
+│ │                       │   'use_local_machine': False,                                                                                          │                               │
+│ │                       │   'cert_store': 'My',                                                                                                  │                               │
+│ │                       │   'timestamp_url': 'http://timestamp.digicert.com',                                                                    │                               │
+│ │                       │   'timestamp_digest': 'sha256'                                                                                         │                               │
+│ │                       }                                                                                                                        │                               │
+│ │                self = <briefcase.platforms.windows.app.WindowsAppBuildCommand object at 0x000001E9ABCA9A90>                                    │                               │
+│ │ unbuilt_binary_path = WindowsPath('D:/Wichtiges/Studium/Bachelorarbeit/Flask/test_webapp/build/mehrstufendiagnostik/windows/app/src/Stub.exe') │                               │
+│ ╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯                               │
+│                                                                                                                                                                                  │
+│ D:\Wichtiges\Studium\Bachelorarbeit\Flask\test_webapp\beeware-venv\Lib\site-packages\briefcase\integrations\subprocess.py:144 in inner                                           │
+│                                                                                                                                                                                  │
+│   141 │   │   │   with sub.tools.console.release_console_control():                                                                                                              │
+│   142 │   │   │   │   return sub_method(sub, args, *wrapped_args, **wrapped_kwargs)                                                                                              │
+│   143 │   │   else:                                                                                                                                                              │
+│ ❱ 144 │   │   │   return sub_method(sub, args, *wrapped_args, **wrapped_kwargs)                                                                                                  │
+│   145 │                                                                                                                                                                          │
+│   146 │   return inner                                                                                                                                                           │
+│   147                                                                                                                                                                            │
+│                                                                                                                                                                                  │
+│ ╭────────────────────────────────────────────────────────────────────────── locals ──────────────────────────────────────────────────────────────────────────╮                   │
+│ │                    args = [                                                                                                                                │                   │
+│ │                           │   WindowsPath('C:/Program Files (x86)/Windows Kits/10/bin/10.0.19041.0/x64/signtool.exe'),                                     │                   │
+│ │                           │   'remove',                                                                                                                    │                   │
+│ │                           │   '-s',                                                                                                                        │                   │
+│ │                           │   WindowsPath('src/Muskoskelettale_Befunderhebung.exe')                                                                        │                   │
+│ │                           ]                                                                                                                                │                   │
+│ │              executable = 'C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.19041.0\\x64\\signtool.exe'                                                │                   │
+│ │ remove_dynamic_elements = False                                                                                                                            │                   │
+│ │                     sub = <briefcase.integrations.subprocess.Subprocess object at 0x000001E9AB5E4050>                                                      │                   │
+│ │            wrapped_args = ()                                                                                                                               │                   │
+│ │          wrapped_kwargs = {'cwd': WindowsPath('D:/Wichtiges/Studium/Bachelorarbeit/Flask/test_webapp/build/mehrstufendiagnostik/windows/app'), 'quiet': 1} │                   │
+│ ╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯                   │
+│                                                                                                                                                                                  │
+│ D:\Wichtiges\Studium\Bachelorarbeit\Flask\test_webapp\beeware-venv\Lib\site-packages\briefcase\integrations\subprocess.py:652 in check_output                                    │
+│                                                                                                                                                                                  │
+│   649 │   │   │   self._log_environment(kwargs.get("env"))                                                                                                                       │
+│   650 │   │                                                                                                                                                                      │
+│   651 │   │   try:                                                                                                                                                               │
+│ ❱ 652 │   │   │   cmd_output = self._subprocess.check_output(                                                                                                                    │
+│   653 │   │   │   │   [str(arg) for arg in args], **self.final_kwargs(**kwargs)                                                                                                  │
+│   654 │   │   │   )                                                                                                                                                              │
+│   655 │   │   except subprocess.CalledProcessError as e:                                                                                                                         │
+│                                                                                                                                                                                  │
+│ ╭───────────────────────────────────────────────────────────────────────────────── locals ──────────────────────────────────────────────────────────────────────────────────╮    │
+│ │   args = [WindowsPath('C:/Program Files (x86)/Windows Kits/10/bin/10.0.19041.0/x64/signtool.exe'), 'remove', '-s', WindowsPath('src/Muskoskelettale_Befunderhebung.exe')] │    │
+│ │ kwargs = {'cwd': WindowsPath('D:/Wichtiges/Studium/Bachelorarbeit/Flask/test_webapp/build/mehrstufendiagnostik/windows/app'), 'stderr': -2}                               │    │
+│ │  quiet = 1                                                                                                                                                                │    │
+│ │   self = <briefcase.integrations.subprocess.Subprocess object at 0x000001E9AB5E4050>                                                                                      │    │
+│ ╰───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯    │
+│                                                                                                                                                                                  │
+│ C:\Python313\Lib\subprocess.py:474 in check_output                                                                                                                               │
+│                                                                                                                                                                                  │
+│    471 │   │   │   empty = b''                                                                                                                                                   │
+│    472 │   │   kwargs['input'] = empty                                                                                                                                           │
+│    473 │                                                                                                                                                                         │
+│ ❱  474 │   return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,                                                                                                      │
+│    475 │   │   │      **kwargs).stdout                                                                                                                                           │
+│    476                                                                                                                                                                           │
+│    477                                                                                                                                                                           │
+│                                                                                                                                                                                  │
+│ ╭─────────────────────────────────────────────────────────────────────────── locals ────────────────────────────────────────────────────────────────────────────╮                │
+│ │        kw = 'check'                                                                                                                                           │                │
+│ │    kwargs = {                                                                                                                                                 │                │
+│ │             │   'stderr': -2,                                                                                                                                 │                │
+│ │             │   'cwd': 'D:\\Wichtiges\\Studium\\Bachelorarbeit\\Flask\\test_webapp\\build\\mehrstufendiagnostik'+12,                                          │                │
+│ │             │   'text': True,                                                                                                                                 │                │
+│ │             │   'encoding': 'cp850',                                                                                                                          │                │
+│ │             │   'errors': 'backslashreplace'                                                                                                                  │                │
+│ │             }                                                                                                                                                 │                │
+│ │ popenargs = (['C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.19041.0\\x64\\signtool.exe', 'remove', '-s', 'src\\Muskoskelettale_Befunderhebung.exe'],) │                │
+│ │   timeout = None                                                                                                                                              │                │
+│ ╰───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯                │
+│                                                                                                                                                                                  │
+│ C:\Python313\Lib\subprocess.py:579 in run                                                                                                                                        │
+│                                                                                                                                                                                  │
+│    576 │   │   │   raise                                                                                                                                                         │
+│    577 │   │   retcode = process.poll()                                                                                                                                          │
+│    578 │   │   if check and retcode:                                                                                                                                             │
+│ ❱  579 │   │   │   raise CalledProcessError(retcode, process.args,                                                                                                               │
+│    580 │   │   │   │   │   │   │   │   │    output=stdout, stderr=stderr)                                                                                                        │
+│    581 │   return CompletedProcess(process.args, retcode, stdout, stderr)                                                                                                        │
+│    582                                                                                                                                                                           │
+│                                                                                                                                                                                  │
+│ ╭────────────────────────────────────────────────────────────────────────────── locals ──────────────────────────────────────────────────────────────────────────────╮           │
+│ │ capture_output = False                                                                                                                                             │           │
+│ │          check = True                                                                                                                                              │           │
+│ │          input = None                                                                                                                                              │           │
+│ │         kwargs = {                                                                                                                                                 │           │
+│ │                  │   'stdout': -1,                                                                                                                                 │           │
+│ │                  │   'stderr': -2,                                                                                                                                 │           │
+│ │                  │   'cwd': 'D:\\Wichtiges\\Studium\\Bachelorarbeit\\Flask\\test_webapp\\build\\mehrstufendiagnostik'+12,                                          │           │
+│ │                  │   'text': True,                                                                                                                                 │           │
+│ │                  │   'encoding': 'cp850',                                                                                                                          │           │
+│ │                  │   'errors': 'backslashreplace'                                                                                                                  │           │
+│ │                  }                                                                                                                                                 │           │
+│ │      popenargs = (['C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.19041.0\\x64\\signtool.exe', 'remove', '-s', 'src\\Muskoskelettale_Befunderhebung.exe'],) │           │
+│ │        process = <Popen: returncode: 1 args: ['C:\\Program Files (x86)\\Windows Kits\\10\\bin...>                                                                  │           │
+│ │        retcode = 1                                                                                                                                                 │           │
+│ │         stderr = None                                                                                                                                              │           │
+│ │         stdout = '\nNumber of errors: 1\n\nSignTool Error: File not found: src\\Muskoskelettale_Befund'+14                                                         │           │
+│ │        timeout = None                                                                                                                                              │           │
+│ ╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯           │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+CalledProcessError: Command '['C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.19041.0\\x64\\signtool.exe', 'remove', '-s', 'src\\Muskoskelettale_Befunderhebung.exe']' returned non-zero exit status 1.
+
+The above exception was the direct cause of the following exception:
+
+╭─────────────────────────────────────────────────────────────────────── Traceback (most recent call last) ────────────────────────────────────────────────────────────────────────╮
+│ D:\Wichtiges\Studium\Bachelorarbeit\Flask\test_webapp\beeware-venv\Lib\site-packages\briefcase\__main__.py:27 in main                                                            │
+│                                                                                                                                                                                  │
+│   24 │   │   │   Path.cwd() / "pyproject.toml",                                                                                                                                  │
+│   25 │   │   │   overrides=overrides,                                                                                                                                            │
+│   26 │   │   )                                                                                                                                                                   │
+│ ❱ 27 │   │   command(**options)                                                                                                                                                  │
+│   28 │   except HelpText as e:                                                                                                                                                   │
+│   29 │   │   console.info()                                                                                                                                                      │
+│   30 │   │   console.info(str(e))                                                                                                                                                │
+│                                                                                                                                                                                  │
+│ ╭─────────────────────────────────────────────────────────────────────────────────── locals ───────────────────────────────────────────────────────────────────────────────────╮ │
+│ │       command = <briefcase.platforms.windows.app.WindowsAppPackageCommand object at 0x000001E9AB49B8C0>                                                                      │ │
+│ │       console = <briefcase.console.Console object at 0x000001E9AB499940>                                                                                                     │ │
+│ │             e = BriefcaseCommandError('Failed to remove any existing digital signatures from the stub app.\n\nRecreating the app layout may also help resolve this           │ │
+│ │                 issue:\n\n    $ briefcase create windows app\n\n')                                                                                                           │ │
+│ │ extra_cmdline = ['-u']                                                                                                                                                       │ │
+│ │       options = {                                                                                                                                                            │ │
+│ │                 │   'update': True,                                                                                                                                          │ │
+│ │                 │   'packaging_format': 'msi',                                                                                                                               │ │
+│ │                 │   'adhoc_sign': False,                                                                                                                                     │ │
+│ │                 │   'identity': None,                                                                                                                                        │ │
+│ │                 │   'file_digest': 'sha256',                                                                                                                                 │ │
+│ │                 │   'use_local_machine': False,                                                                                                                              │ │
+│ │                 │   'cert_store': 'My',                                                                                                                                      │ │
+│ │                 │   'timestamp_url': 'http://timestamp.digicert.com',                                                                                                        │ │
+│ │                 │   'timestamp_digest': 'sha256'                                                                                                                             │ │
+│ │                 }                                                                                                                                                            │ │
+│ │     overrides = {}                                                                                                                                                           │ │
+│ │        result = 200                                                                                                                                                          │ │
+│ ╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯ │
+│                                                                                                                                                                                  │
+│ D:\Wichtiges\Studium\Bachelorarbeit\Flask\test_webapp\beeware-venv\Lib\site-packages\briefcase\commands\package.py:187 in __call__                                               │
+│                                                                                                                                                                                  │
+│   184 │   │                                                                                                                                                                      │
+│   185 │   │   state = None                                                                                                                                                       │
+│   186 │   │   for app_name, app_obj in sorted(apps_to_package.items()):                                                                                                          │
+│ ❱ 187 │   │   │   state = self._package_app(                                                                                                                                     │
+│   188 │   │   │   │   app_obj,                                                                                                                                                   │
+│   189 │   │   │   │   update=update,                                                                                                                                             │
+│   190 │   │   │   │   **full_options(state, options),                                                                                                                            │
+│                                                                                                                                                                                  │
+│ ╭───────────────────────────────────────────────── locals ──────────────────────────────────────────────────╮                                                                    │
+│ │             app = None                                                                                    │                                                                    │
+│ │        app_name = 'mehrstufendiagnostik'                                                                  │                                                                    │
+│ │         app_obj = <toplevel.domain.mehrstufendiagnostik v0.0.1 AppConfig>                                 │                                                                    │
+│ │ apps_to_package = {'mehrstufendiagnostik': <toplevel.domain.mehrstufendiagnostik v0.0.1 AppConfig>}       │                                                                    │
+│ │         options = {                                                                                       │                                                                    │
+│ │                   │   'packaging_format': 'msi',                                                          │                                                                    │
+│ │                   │   'adhoc_sign': False,                                                                │                                                                    │
+│ │                   │   'identity': None,                                                                   │                                                                    │
+│ │                   │   'file_digest': 'sha256',                                                            │                                                                    │
+│ │                   │   'use_local_machine': False,                                                         │                                                                    │
+│ │                   │   'cert_store': 'My',                                                                 │                                                                    │
+│ │                   │   'timestamp_url': 'http://timestamp.digicert.com',                                   │                                                                    │
+│ │                   │   'timestamp_digest': 'sha256'                                                        │                                                                    │
+│ │                   }                                                                                       │                                                                    │
+│ │            self = <briefcase.platforms.windows.app.WindowsAppPackageCommand object at 0x000001E9AB49B8C0> │                                                                    │
+│ │           state = None                                                                                    │                                                                    │
+│ │          update = True                                                                                    │                                                                    │
+│ ╰───────────────────────────────────────────────────────────────────────────────────────────────────────────╯                                                                    │
+│                                                                                                                                                                                  │
+│ D:\Wichtiges\Studium\Bachelorarbeit\Flask\test_webapp\beeware-venv\Lib\site-packages\briefcase\commands\package.py:98 in _package_app                                            │
+│                                                                                                                                                                                  │
+│    95 │   │   │   │   update_support=True,                                                                                                                                       │
+│    96 │   │   │   │   **options,                                                                                                                                                 │
+│    97 │   │   │   )                                                                                                                                                              │
+│ ❱  98 │   │   │   state = self.build_command(app, **full_options(state, options))                                                                                                │
+│    99 │   │   elif not binary_file.exists():                                                                                                                                     │
+│   100 │   │   │   state = self.build_command(app, **options)                                                                                                                     │
+│   101 │   │   else:                                                                                                                                                              │
+│                                                                                                                                                                                  │
+│ ╭─────────────────────────────────────────────────────────────────────────────── locals ────────────────────────────────────────────────────────────────────────────────╮        │
+│ │              app = <toplevel.domain.mehrstufendiagnostik v0.0.1 AppConfig>                                                                                            │        │
+│ │      binary_file = WindowsPath('D:/Wichtiges/Studium/Bachelorarbeit/Flask/test_webapp/build/mehrstufendiagnostik/windows/app/src/Muskoskelettale_Befunderhebung.exe') │        │
+│ │          options = {                                                                                                                                                  │        │
+│ │                    │   'adhoc_sign': False,                                                                                                                           │        │
+│ │                    │   'identity': None,                                                                                                                              │        │
+│ │                    │   'file_digest': 'sha256',                                                                                                                       │        │
+│ │                    │   'use_local_machine': False,                                                                                                                    │        │
+│ │                    │   'cert_store': 'My',                                                                                                                            │        │
+│ │                    │   'timestamp_url': 'http://timestamp.digicert.com',                                                                                              │        │
+│ │                    │   'timestamp_digest': 'sha256'                                                                                                                   │        │
+│ │                    }                                                                                                                                                  │        │
+│ │ packaging_format = 'msi'                                                                                                                                              │        │
+│ │             self = <briefcase.platforms.windows.app.WindowsAppPackageCommand object at 0x000001E9AB49B8C0>                                                            │        │
+│ │            state = None                                                                                                                                               │        │
+│ │    template_file = WindowsPath('D:/Wichtiges/Studium/Bachelorarbeit/Flask/test_webapp/build/mehrstufendiagnostik/windows/app')                                        │        │
+│ │           update = True                                                                                                                                               │        │
+│ ╰───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯        │
+│                                                                                                                                                                                  │
+│ D:\Wichtiges\Studium\Bachelorarbeit\Flask\test_webapp\beeware-venv\Lib\site-packages\briefcase\commands\build.py:151 in __call__                                                 │
+│                                                                                                                                                                                  │
+│   148 │   │                                                                                                                                                                      │
+│   149 │   │   state = None                                                                                                                                                       │
+│   150 │   │   for app_name, app_obj in sorted(apps_to_build.items()):                                                                                                            │
+│ ❱ 151 │   │   │   state = self._build_app(                                                                                                                                       │
+│   152 │   │   │   │   app_obj,                                                                                                                                                   │
+│   153 │   │   │   │   update=update,                                                                                                                                             │
+│   154 │   │   │   │   update_requirements=update_requirements,                                                                                                                   │
+│                                                                                                                                                                                  │
+│ ╭────────────────────────────────────────────────── locals ───────────────────────────────────────────────────╮                                                                  │
+│ │                 app = <toplevel.domain.mehrstufendiagnostik v0.0.1 AppConfig>                               │                                                                  │
+│ │            app_name = 'mehrstufendiagnostik'                                                                │                                                                  │
+│ │             app_obj = <toplevel.domain.mehrstufendiagnostik v0.0.1 AppConfig>                               │                                                                  │
+│ │       apps_to_build = {'mehrstufendiagnostik': <toplevel.domain.mehrstufendiagnostik v0.0.1 AppConfig>}     │                                                                  │
+│ │           no_update = False                                                                                 │                                                                  │
+│ │             options = {                                                                                     │                                                                  │
+│ │                       │   'adhoc_sign': False,                                                              │                                                                  │
+│ │                       │   'identity': None,                                                                 │                                                                  │
+│ │                       │   'file_digest': 'sha256',                                                          │                                                                  │
+│ │                       │   'use_local_machine': False,                                                       │                                                                  │
+│ │                       │   'cert_store': 'My',                                                               │                                                                  │
+│ │                       │   'timestamp_url': 'http://timestamp.digicert.com',                                 │                                                                  │
+│ │                       │   'timestamp_digest': 'sha256'                                                      │                                                                  │
+│ │                       }                                                                                     │                                                                  │
+│ │                self = <briefcase.platforms.windows.app.WindowsAppBuildCommand object at 0x000001E9ABCA9A90> │                                                                  │
+│ │               state = None                                                                                  │                                                                  │
+│ │           test_mode = False                                                                                 │                                                                  │
+│ │              update = False                                                                                 │                                                                  │
+│ │ update_requirements = False                                                                                 │                                                                  │
+│ │    update_resources = False                                                                                 │                                                                  │
+│ │         update_stub = False                                                                                 │                                                                  │
+│ │      update_support = False                                                                                 │                                                                  │
+│ ╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────╯                                                                  │
+│                                                                                                                                                                                  │
+│ D:\Wichtiges\Studium\Bachelorarbeit\Flask\test_webapp\beeware-venv\Lib\site-packages\briefcase\commands\build.py:87 in _build_app                                                │
+│                                                                                                                                                                                  │
+│    84 │   │                                                                                                                                                                      │
+│    85 │   │   self.verify_app(app)                                                                                                                                               │
+│    86 │   │                                                                                                                                                                      │
+│ ❱  87 │   │   state = self.build_app(app, test_mode=test_mode, **full_options(state, options))                                                                                   │
+│    88 │   │                                                                                                                                                                      │
+│    89 │   │   qualifier = " (test mode)" if test_mode else ""                                                                                                                    │
+│    90 │   │   self.console.info(                                                                                                                                                 │
+│                                                                                                                                                                                  │
+│ ╭────────────────────────────────────────────────── locals ───────────────────────────────────────────────────╮                                                                  │
+│ │                 app = <toplevel.domain.mehrstufendiagnostik v0.0.1 AppConfig>                               │                                                                  │
+│ │           no_update = False                                                                                 │                                                                  │
+│ │             options = {                                                                                     │                                                                  │
+│ │                       │   'adhoc_sign': False,                                                              │                                                                  │
+│ │                       │   'identity': None,                                                                 │                                                                  │
+│ │                       │   'file_digest': 'sha256',                                                          │                                                                  │
+│ │                       │   'use_local_machine': False,                                                       │                                                                  │
+│ │                       │   'cert_store': 'My',                                                               │                                                                  │
+│ │                       │   'timestamp_url': 'http://timestamp.digicert.com',                                 │                                                                  │
+│ │                       │   'timestamp_digest': 'sha256'                                                      │                                                                  │
+│ │                       }                                                                                     │                                                                  │
+│ │                self = <briefcase.platforms.windows.app.WindowsAppBuildCommand object at 0x000001E9ABCA9A90> │                                                                  │
+│ │               state = None                                                                                  │                                                                  │
+│ │           test_mode = False                                                                                 │                                                                  │
+│ │              update = False                                                                                 │                                                                  │
+│ │ update_requirements = False                                                                                 │                                                                  │
+│ │    update_resources = False                                                                                 │                                                                  │
+│ │         update_stub = False                                                                                 │                                                                  │
+│ │      update_support = False                                                                                 │                                                                  │
+│ ╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────╯                                                                  │
+│                                                                                                                                                                                  │
+│ D:\Wichtiges\Studium\Bachelorarbeit\Flask\test_webapp\beeware-venv\Lib\site-packages\briefcase\platforms\windows\app.py:86 in build_app                                          │
+│                                                                                                                                                                                  │
+│    83 │   │   │   │   │   # is not currently signed                                                                                                                              │
+│    84 │   │   │   │   │   if "error: 0x00000057" not in e.stdout:                                                                                                                │
+│    85 │   │   │   │   │   │   self.tools.subprocess.output_error(e)                                                                                                              │
+│ ❱  86 │   │   │   │   │   │   raise BriefcaseCommandError(                                                                                                                       │
+│    87 │   │   │   │   │   │   │   f"""\                                                                                                                                          │
+│    88 Failed to remove any existing digital signatures from the stub app.                                                                                                        │
+│    89                                                                                                                                                                            │
+│                                                                                                                                                                                  │
+│ ╭──────────────────────────────────────────────────────────────────── locals ────────────────────────────────────────────────────────────────────╮                               │
+│ │                 app = <toplevel.domain.mehrstufendiagnostik v0.0.1 AppConfig>                                                                  │                               │
+│ │              kwargs = {                                                                                                                        │                               │
+│ │                       │   'test_mode': False,                                                                                                  │                               │
+│ │                       │   'adhoc_sign': False,                                                                                                 │                               │
+│ │                       │   'identity': None,                                                                                                    │                               │
+│ │                       │   'file_digest': 'sha256',                                                                                             │                               │
+│ │                       │   'use_local_machine': False,                                                                                          │                               │
+│ │                       │   'cert_store': 'My',                                                                                                  │                               │
+│ │                       │   'timestamp_url': 'http://timestamp.digicert.com',                                                                    │                               │
+│ │                       │   'timestamp_digest': 'sha256'                                                                                         │                               │
+│ │                       }                                                                                                                        │                               │
+│ │                self = <briefcase.platforms.windows.app.WindowsAppBuildCommand object at 0x000001E9ABCA9A90>                                    │                               │
+│ │ unbuilt_binary_path = WindowsPath('D:/Wichtiges/Studium/Bachelorarbeit/Flask/test_webapp/build/mehrstufendiagnostik/windows/app/src/Stub.exe') │                               │
+│ ╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯                               │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+BriefcaseCommandError: Failed to remove any existing digital signatures from the stub app.
+
+Recreating the app layout may also help resolve this issue:
+
+    $ briefcase create windows app
+
+
