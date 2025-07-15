@@ -12,7 +12,7 @@ Falls Sie einen Windows-Rechner nutzen, führen Sie folgende Schritte zur Instal
 
 <b>Schritt 3:</b> Führen Sie die Datei "Muskoskelettale_Befunderhebung-0.0.1.msi" aus und installieren sie das Programm.
 
-<b>Schritt 4:</b> Um das Programm zu starten, führen sie die Datei “Muskoskelettale_Befunderhebung.bat” aus, diese öffnet das Programm in ihrem Standard-Webbrowser sowie ein Terminal. Wenn Sie die App nicht mehr nutzen wollen, schließen sie sowohl den Tab als auch das Terminal, um das Programm vollständig zu beenden.
+<b>Schritt 4:</b> Um das Programm zu starten, führen sie die Datei “Muskoskelettale_Befunderhebung.bat” aus, diese öffnet das Programm in ihrem Standard-Webbrowser.
 
 (<b>Schritt 5:</b> Falls beim Ausführen der Datei “Muskoskelettale_Befunderhebung.bat” eine Warnung kommt, dass der Computer durch Windows geschützt wurde, dann klicken Sie auf "Weitere Informationen" und "Trotzdem ausführen". Dies sollte nur einmalig nötig sein.)
 
